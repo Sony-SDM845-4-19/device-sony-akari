@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Platform
+PRODUCT_PLATFORM := tama
+
 include device/sony/tama/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := unknown
@@ -23,9 +26,6 @@ else
 TARGET_BOOTLOADER_BOARD_NAME := H8216
 $(warning Unrecognized value for TARGET_PRODUCT: "$(TARGET_PRODUCT)", using default value: "$(TARGET_BOOTLOADER_BOARD_NAME)")
 endif
-
-# Platform
-PRODUCT_PLATFORM := tama
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=akari
 
